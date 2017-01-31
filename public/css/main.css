@@ -1,1 +1,36 @@
-h1 { text-transform: uppercase; margin: auto auto; }
+/*********** GENERAL CSS PROPERITIES ********************/
+
+h1 { text-transform: uppercase; margin: 0 auto; text-align: center; display: block; }
+
+p { clear: both;  }
+
+.thumbnail {  overflow:hidden; position: relative; display: flex !important; justify-content: center; align-items: center; }
+
+/********  WELCOME PAGE CSS PROPERITIES ****************/
+
+
+.welcome { width: 300px; height: 300px; }
+
+.thumbnail > a img { }
+ /*position:absolute; top:50%; min-height:100%; display:block; left:50%; -webkit-transform: translate(-50%, -50%); min-width:100%;*/
+
+div h3 { color: #000; text-align: center; width: 300px;}
+
+div h3:hover { color: #367ec6;}
+
+div a:hover { text-decoration: none;  }
+
+
+/********** PRODUCT DETAILS PAGE CSS PROPERITIES ****************/
+
+.product-details h1 { margin-top: 40px; }
+
+.product-details h4 { clear: both; margin-top: 0; }
+
+.detail-img {  height: 500px; width: 500px; position: relative; margin-top: 160px; }
+
+.price { font-weight: bold; font-size: 20px; }
+
+.add-to-cart { margin-left: 270px; }
+
+input.add_qty { text-align: center; width: 23px; }
