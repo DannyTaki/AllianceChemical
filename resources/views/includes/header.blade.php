@@ -36,7 +36,10 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>   Cart</a></li>
+        <li><a href="{{ route('product.shoppingCart') }}">
+          <span class="glyphicon glyphicon-shopping-cart"></span>   Cart
+          <span id="cart-total" class="badge">{{ Session::has('cart') ? Session::get('cart')->totalQty : '' }}</span>
+        </a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>   Account <span class="caret"></span></a>
           <ul class="dropdown-menu">

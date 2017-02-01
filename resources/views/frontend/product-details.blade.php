@@ -9,11 +9,11 @@
   <h1 class="pull-left">{{ $product->title }}</h1>
   <h4 class="pull-left clearfix">{{ $product->description }}</h4>
   <div class="thumbnail detail-img">
-     <img src="{{ URL::to($product->imagePath) }}" alt="" class="img-responsive">
+     <img src="{{ URL::to($product->imagePath2) }}" alt="" class="img-responsive">
   </div>
     <div class="price-section">
       <p class="pull-left price text-success">${{ $product->price}}</p>
-      <button class="pull-right btn btn-primary add-to-cart" type="submit success" value="Add to Cart">Add to Cart</button>
+      <a href="{{ route('product.addToCart', [ 'id' => $product->id ]) }}" class="pull-right btn btn-primary" id="add-to-cart" role="button" >Add to Cart</a>
     </div>
   <table class="table table-striped">
     <tr>

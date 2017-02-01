@@ -23,6 +23,7 @@ class CreateChemicalsTable extends Migration
           $table->char('volume', 1);
           $table->char('weight', 1);
           $table->string('imagePath');
+          $table->string('imagePath2');
         });
     }
 
